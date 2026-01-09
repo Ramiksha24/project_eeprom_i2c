@@ -37,7 +37,7 @@ The following diagram shows the top-level architecture, including:
 - SDA IOBUF
 - EEPROM interface
 
-![Block Diagram](Docs/block_diagram.png)
+![Block Diagram](Docs/bd/design_1/block_diagram.png)
 
 ---
 
