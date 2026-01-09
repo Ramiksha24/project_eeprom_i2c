@@ -1,0 +1,17 @@
+# Vivado project generated directories
+project_eeprom_i2c.cache/
+project_eeprom_i2c.gen/
+project_eeprom_i2c.hw/
+project_eeprom_i2c.ip_user_files/
+project_eeprom_i2c.runs/
+project_eeprom_i2c.sim/
+project_eeprom_i2c.srcs/
+
+# Generic Vivado junk
+*.jou
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+

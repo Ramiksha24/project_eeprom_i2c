@@ -1,0 +1,394 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD34204B38640E7E6",
+      "device": "xc7a50tftg256-1",
+      "gen_directory": "../../../../project_eeprom_i2c.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "vio_0": "",
+      "ila_0": "",
+      "i2c_eeprom_master_0": ""
+    },
+    "ports": {
+      "clk_in1_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_clk_in1_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "200000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "scl_0": {
+        "direction": "O"
+      },
+      "sda_0": {
+        "direction": "IO"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_path": "ip\\design_1_clk_wiz_0_0\\design_1_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "50.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "112.316"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "89.971"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "200.000"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "vio_0": {
+        "vlnv": "xilinx.com:ip:vio:3.0",
+        "xci_name": "design_1_vio_0_0",
+        "xci_path": "ip\\design_1_vio_0_0\\design_1_vio_0_0.xci",
+        "inst_hier_path": "vio_0",
+        "parameters": {
+          "C_NUM_PROBE_IN": {
+            "value": "8"
+          },
+          "C_NUM_PROBE_OUT": {
+            "value": "6"
+          },
+          "C_PROBE_OUT3_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE_OUT4_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE_OUT5_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_0",
+        "xci_path": "ip\\design_1_ila_0_0\\design_1_ila_0_0.xci",
+        "inst_hier_path": "ila_0",
+        "parameters": {
+          "C_ENABLE_ILA_AXI_MON": {
+            "value": "false"
+          },
+          "C_MONITOR_TYPE": {
+            "value": "Native"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "15"
+          },
+          "C_PROBE10_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE11_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE12_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE3_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE4_WIDTH": {
+            "value": "16"
+          },
+          "C_PROBE5_WIDTH": {
+            "value": "8"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "i2c_eeprom_master_0": {
+        "vlnv": "xilinx.com:module_ref:i2c_eeprom_master:1.0",
+        "xci_name": "design_1_i2c_eeprom_master_0_0",
+        "xci_path": "ip\\design_1_i2c_eeprom_master_0_0\\design_1_i2c_eeprom_master_0_0.xci",
+        "inst_hier_path": "i2c_eeprom_master_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "i2c_eeprom_master",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "ip_prop"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "ip_prop"
+              },
+              "CLK_DOMAIN": {
+                "value": "/clk_wiz_0_clk_out1",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "rst_n": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_LOW",
+                "value_src": "constant"
+              }
+            }
+          },
+          "start_write": {
+            "direction": "I"
+          },
+          "start_read": {
+            "direction": "I"
+          },
+          "slave_addr": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "mem_addr": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "data_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "busy": {
+            "direction": "O"
+          },
+          "done": {
+            "direction": "O"
+          },
+          "error": {
+            "direction": "O"
+          },
+          "scl": {
+            "direction": "O"
+          },
+          "sda": {
+            "direction": "IO"
+          },
+          "debug_sda_out": {
+            "direction": "O"
+          },
+          "debug_sda_in": {
+            "direction": "O"
+          },
+          "debug_sda_en": {
+            "direction": "O"
+          },
+          "debug_state": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "debug_bit_cnt": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "debug_shift_reg": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "sda_0",
+          "i2c_eeprom_master_0/sda"
+        ]
+      },
+      "clk_in1_0_1": {
+        "ports": [
+          "clk_in1_0",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "vio_0/clk",
+          "ila_0/clk",
+          "i2c_eeprom_master_0/clk"
+        ]
+      },
+      "i2c_eeprom_master_0_busy": {
+        "ports": [
+          "i2c_eeprom_master_0/busy",
+          "vio_0/probe_in1",
+          "ila_0/probe14"
+        ]
+      },
+      "i2c_eeprom_master_0_data_out": {
+        "ports": [
+          "i2c_eeprom_master_0/data_out",
+          "vio_0/probe_in0",
+          "ila_0/probe12"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_bit_cnt": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_bit_cnt",
+          "vio_0/probe_in6",
+          "ila_0/probe10"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_sda_en": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_sda_en",
+          "ila_0/probe13"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_sda_in": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_sda_in",
+          "ila_0/probe8"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_sda_out": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_sda_out",
+          "ila_0/probe7"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_shift_reg": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_shift_reg",
+          "vio_0/probe_in7",
+          "ila_0/probe11"
+        ]
+      },
+      "i2c_eeprom_master_0_debug_state": {
+        "ports": [
+          "i2c_eeprom_master_0/debug_state",
+          "vio_0/probe_in5",
+          "ila_0/probe9"
+        ]
+      },
+      "i2c_eeprom_master_0_done": {
+        "ports": [
+          "i2c_eeprom_master_0/done",
+          "vio_0/probe_in2"
+        ]
+      },
+      "i2c_eeprom_master_0_error": {
+        "ports": [
+          "i2c_eeprom_master_0/error",
+          "vio_0/probe_in3"
+        ]
+      },
+      "i2c_eeprom_master_0_scl": {
+        "ports": [
+          "i2c_eeprom_master_0/scl",
+          "scl_0",
+          "ila_0/probe6"
+        ]
+      },
+      "vio_0_probe_out0": {
+        "ports": [
+          "vio_0/probe_out0",
+          "ila_0/probe0",
+          "i2c_eeprom_master_0/rst_n"
+        ]
+      },
+      "vio_0_probe_out1": {
+        "ports": [
+          "vio_0/probe_out1",
+          "ila_0/probe1",
+          "i2c_eeprom_master_0/start_write"
+        ]
+      },
+      "vio_0_probe_out2": {
+        "ports": [
+          "vio_0/probe_out2",
+          "vio_0/probe_in4",
+          "ila_0/probe2",
+          "i2c_eeprom_master_0/start_read"
+        ]
+      },
+      "vio_0_probe_out3": {
+        "ports": [
+          "vio_0/probe_out3",
+          "ila_0/probe3",
+          "i2c_eeprom_master_0/slave_addr"
+        ]
+      },
+      "vio_0_probe_out4": {
+        "ports": [
+          "vio_0/probe_out4",
+          "ila_0/probe4",
+          "i2c_eeprom_master_0/mem_addr"
+        ]
+      },
+      "vio_0_probe_out5": {
+        "ports": [
+          "vio_0/probe_out5",
+          "ila_0/probe5",
+          "i2c_eeprom_master_0/data_in"
+        ]
+      }
+    }
+  }
+}

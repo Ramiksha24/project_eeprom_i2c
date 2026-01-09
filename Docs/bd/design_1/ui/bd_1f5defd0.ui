@@ -1,0 +1,39 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.735067",
+   "Default View_TopLeft":"-950,-520",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_clk_in1_0 -pg 1 -lvl 0 -x -510 -y -20 -defaultsOSRD
+preplace port port-id_scl_0 -pg 1 -lvl 4 -x 740 -y 60 -defaultsOSRD
+preplace port port-id_sda_0 -pg 1 -lvl 4 -x 740 -y 90 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x -270 -y -20 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 1 -x -270 -y 160 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 2 -x 120 -y -120 -defaultsOSRD
+preplace inst i2c_eeprom_master_0 -pg 1 -lvl 3 -x 440 -y 90 -defaultsOSRD
+preplace netloc Net 1 3 1 700 80n
+preplace netloc clk_in1_0_1 1 0 1 N -20
+preplace netloc clk_wiz_0_clk_out1 1 0 3 -450 300 -100 90 210
+preplace netloc i2c_eeprom_master_0_busy 1 0 4 -430 310 -130J 290 NJ 290 660
+preplace netloc i2c_eeprom_master_0_data_out 1 0 4 -470 320 -110J 310 NJ 310 670
+preplace netloc i2c_eeprom_master_0_debug_bit_cnt 1 0 4 -420 330 -90J 320 NJ 320 630
+preplace netloc i2c_eeprom_master_0_debug_sda_en 1 1 3 10 260 NJ 260 600
+preplace netloc i2c_eeprom_master_0_debug_sda_in 1 1 3 0 270 NJ 270 610
+preplace netloc i2c_eeprom_master_0_debug_sda_out 1 1 3 -10 300 NJ 300 640
+preplace netloc i2c_eeprom_master_0_debug_shift_reg 1 0 4 -410 340 -70J 330 NJ 330 620
+preplace netloc i2c_eeprom_master_0_debug_state 1 0 4 -460 -80 -50J 340 NJ 340 650
+preplace netloc i2c_eeprom_master_0_done 1 0 4 -490 360 NJ 360 NJ 360 690
+preplace netloc i2c_eeprom_master_0_error 1 0 4 -480 370 NJ 370 NJ 370 680
+preplace netloc i2c_eeprom_master_0_scl 1 1 3 -20 280 N 280 710
+preplace netloc vio_0_probe_out0 1 1 2 -140J 100 220
+preplace netloc vio_0_probe_out1 1 1 2 -120J 110 230
+preplace netloc vio_0_probe_out2 1 0 3 -440 350 -40J 120 240
+preplace netloc vio_0_probe_out3 1 1 2 -80J 130 250
+preplace netloc vio_0_probe_out4 1 1 2 -60J 140 260
+preplace netloc vio_0_probe_out5 1 1 2 -30J 150 N
+levelinfo -pg 1 -510 -270 120 440 740
+pagesize -pg 1 -db -bbox -sgen -620 -330 830 380
+"
+}
+0
