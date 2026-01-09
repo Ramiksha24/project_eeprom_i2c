@@ -50,7 +50,7 @@ Below is the simulated waveform showing a complete EEPROM transaction:
 - Data phase
 - STOP condition
 
-![I2C Waveform](Docs/i2c_waveform.png)
+![I2C Waveform](Docs/bd/design_1/waveform.jpeg)
 
 ---
 
